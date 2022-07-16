@@ -58,7 +58,6 @@ module "security_group" {
 }
 
 ### S3 ROLE ###
-
 resource "aws_iam_instance_profile" "test_profile" {
   name      = "${var.name}-intance-profile"
   role      = var.ec2_role 
