@@ -92,11 +92,7 @@ Start-Sleep -Seconds 55
 #Disable Windows Firewall
 Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False
 
-# .Net 4.8 install
-Start-Process -Wait -FilePath C:\Users\Administrator\install\ndp48-devpack-enu.exe -Argument "/silent" -PassThru
-
-Start-Sleep -Seconds 55
-
+Start-Sleep -Seconds 5
 
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 
